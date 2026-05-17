@@ -568,46 +568,56 @@ body {
   50%       { transform: translateX(-50%) translateY(6px); }
 }
 
-/* ── ABOUT ── */
+//* ── ABOUT ── */
+
 .about {
   background: var(--bg-2);
 }
 
 .about__inner {
   display: grid;
-  grid-template-columns: 1fr 1.4fr;
+  grid-template-columns: 1.1fr 1.2fr;
   gap: 5rem;
-  align-items: start;
+  align-items: center;
 }
+
+/* ── IMAGE FRAME ── */
 
 .photo-frame {
   position: relative;
-  display: inline-block;
+
+  width: 100%;
+  max-width: 520px;
+
+  aspect-ratio: 16 / 10;
+
+  overflow: hidden;
+  border-radius: 24px;
+
+  background: #cdb67a;
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.35),
+    0 0 0 1px rgba(255,255,255,0.05);
 }
 
 .photo-frame img {
   width: 100%;
-  max-width: 420px;
-  aspect-ratio: 5/6;
+  height: 100%;
+
   object-fit: cover;
-  border-radius: var(--radius);
-  filter: grayscale(15%);
-  transition: filter var(--t);
+  object-position: center;
+
+  display: block;
+
+  transition:
+    transform 0.5s ease;
 }
 
-.photo-frame img:hover {
-  filter: grayscale(0%);
-}
+/* ── HOVER ── */
 
-.photo-frame__accent {
-  position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
-  right: -1.5rem;
-  bottom: -1.5rem;
-  border: 1px solid var(--accent-dim);
-  border-radius: var(--radius);
-  z-index: -1;
+.photo-frame:hover img {
+  transform: scale(1.04);
 }
 
 .about__body {
