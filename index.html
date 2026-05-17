@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karen Kamal — Backend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Paste style_additions.css content at bottom of style.css -->
+</head>
+
+<body>
+
+  <!-- ░░░ NAV ░░░ -->
+  <nav class="nav" id="navbar">
+    <a href="#hero" class="nav__logo">KK<span class="dot">.</span></a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="5" />
+        <line x1="12" y1="1" x2="12" y2="3" />
+        <line x1="12" y1="21" x2="12" y2="23" />
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+        <line x1="1" y1="12" x2="3" y2="12" />
+        <line x1="21" y1="12" x2="23" y2="12" />
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+      </svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+      </svg>
+    </button>
+  </nav>
+
+<!-- ░░░ HERO — NEW DESIGN (Option B) ░░░ -->
+<!-- استبدلي الـ <section class="hero" id="hero"> القديمة بالكود ده كله -->
+
+<section class="hero" id="hero">
+  <div class="hero__noise"></div>
+  <div class="hero__grid-lines"></div>
+
+  <div class="hero__wrapper">
+
+    <!-- LEFT CONTENT -->
+    <div class="hero__content">
+
+
+      <p class="hero__eyebrow reveal delay-1">Backend Developer</p>
+
+      <!-- Typewriter target — JS fills this -->
+      <h1 class="hero__name reveal delay-2"></h1>
+
+      <p class="hero__sub reveal delay-3">
+        Building scalable web applications, secure APIs, and clean backend
+        architectures using Laravel &amp; Filament — focused on performance,
+        maintainability, and seamless user experiences.
+      </p>
+
+    
+      <div class="hero__cta reveal delay-4">
+        <a href="#projects" class="btn btn--primary">View Projects</a>
+        <a href="./images/karen-kamal-cv.pdf" download class="btn btn--ghost">Download CV</a>
+        <a href="#contact" class="btn btn--ghost">Contact Me</a>
+      </div>
+
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="hero__image reveal delay-3">
+      <div class="hero__image-frame">
+        <img src="images/me.png" alt="Karen Kamal" />
+        <!-- Stats card فوق الصورة -->
+        <div class="hero__stats-card">
+          <div class="hero__stat">
+            <span class="hero__stat-num">10+</span>
+            <span class="hero__stat-lbl">Projects</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-num">2</span>
+            <span class="hero__stat-lbl">Live</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-num">8+</span>
+            <span class="hero__stat-lbl">Clients</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <a href="#about" class="hero__scroll" aria-label="Scroll down">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <line x1="12" y1="5" x2="12" y2="19" />
+      <polyline points="19 12 12 19 5 12" />
+    </svg>
+  </a>
+</section>
+
+ <!-- ░░░ ABOUT ░░░ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about__inner">
+
+        <!-- IMAGE -->
+        <div class="about__photo reveal">
+          <div class="photo-frame">
+            <img src="./images/me.png" alt="Karen Kamal" />
+            <div class="photo-frame__accent"></div>
+          </div>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="about__text">
+          <p class="section__label reveal">About Me</p>
+          <h2 class="section__title reveal delay-1">
+            Transforming complex business logic<br />
+            <em>into secure, high-performance backends</em>
+          </h2>
+          
+          <p class="about__body reveal delay-2">
+            I am a Backend Developer specializing in <strong>Laravel and FilamentPHP</strong>, dedicated to building robust web applications, secure APIs, and intelligent admin ecosystems. I don't just write code; I engineer scalable architectures that ensure your platform remains fast, reliable, and capable of handling growth effortlessly.
+          </p>
+          
+          <p class="about__body reveal delay-3">
+            With hands-on experience delivering production-grade solutions across <strong>Healthcare, E-commerce, and Business Automation</strong>, I bridge the gap between complex requirements and seamless execution. From integrating AI and real-time chat infrastructures to optimizing database performance, my focus is always on clean code and measurable reliability.
+          </p>
+
+         
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░ SKILLS ░░░ -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <p class="section__label reveal">Technical Expertise</p>
+      <h2 class="section__title reveal delay-1"> Skills </h2>
+      <div class="skills__grid">
+
+        <div class="skill-card reveal delay-1">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" />
+            </svg>
+          </div>
+          <h3>Languages</h3>
+          <ul><li>PHP</li><li>JavaScript</li><li>HTML5</li><li>CSS3</li></ul>
+        </div>
+
+        <div class="skill-card reveal delay-2">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="3" width="20" height="14" rx="2" /><line x1="8" y1="21" x2="16" y2="21" /><line x1="12" y1="17" x2="12" y2="21" />
+            </svg>
+          </div>
+          <h3>Frameworks &amp; Backend</h3>
+          <ul><li>Laravel</li><li>FilamentPHP</li><li>Laravel Sanctum</li><li>RESTful APIs</li></ul>
+        </div>
+
+        <div class="skill-card reveal delay-3">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <ellipse cx="12" cy="5" rx="9" ry="3" />
+              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+            </svg>
+          </div>
+          <h3>Database &amp; Storage</h3>
+          <ul><li>MySQL</li><li>Firebase</li><li>Query Optimization</li><li>Data Management</li></ul>
+        </div>
+
+        <div class="skill-card reveal delay-4">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <h3>APIs &amp; Integrations</h3>
+          <ul><li>REST API Integration</li><li>Firebase Cloud Messaging</li><li>SendGrid Email Service</li><li>Payment Gateway APIs</li></ul>
+        </div>
+
+        <div class="skill-card reveal delay-2">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="5" width="20" height="14" rx="2" /><line x1="2" y1="10" x2="22" y2="10" />
+            </svg>
+          </div>
+          <h3>Payment Integration</h3>
+          <ul><li>Stripe</li><li>PayPal</li><li>Paymob</li><li>Secure Transactions</li></ul>
+        </div>
+
+        <div class="skill-card reveal delay-3">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="3" />
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
+              <path d="M4.93 4.93a10 10 0 0 0 0 14.14" />
+            </svg>
+          </div>
+          <h3>Tools &amp; Workflow</h3>
+          <ul><li>Git &amp; GitHub</li><li>Bitbucket</li><li>Jira</li><li>Postman</li></ul>
+        </div>
+
+        <div class="skill-card reveal delay-4">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M4 7h16" /><path d="M4 12h10" /><path d="M4 17h16" /><circle cx="18" cy="12" r="2" />
+            </svg>
+          </div>
+          <h3>Automation &amp; Workflow Systems</h3>
+          <ul><li>n8n Automation</li><li>Workflow Automation</li></ul>
+        </div>
+
+        <div class="skill-card reveal delay-4">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M4 6h16" /><path d="M4 12h16" /><path d="M4 18h16" />
+            </svg>
+          </div>
+          <h3>Architecture Patterns</h3>
+          <ul><li>MVC Architecture</li><li>Clean Architecture</li><li>Scalable Backend Design</li><li>Modular Systems</li></ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░ PROJECTS ░░░ -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <p class="section__label reveal">Selected Work</p>
+      <h2 class="section__title reveal delay-1">Featured <em>Projects</em></h2>
+      <div class="projects__grid">
+
+        <!-- Project 1 — Coptic Hymns (has live link) -->
+        <article class="project-card reveal delay-1" data-project="hymns">
+          <div class="project-card__header">
+            <span class="project-card__num">01</span>
+            <div class="project-card__tags">
+              <span>Laravel</span><span>FilamentPHP</span><span>Firebase</span>
+            </div>
+          </div>
+          <h3 class="project-card__title">Coptic Hymns School</h3>
+          <p class="project-card__type">E-Learning Platform</p>
+          <p class="project-card__desc">
+            A bilingual e-learning platform serving users across Egypt and the USA — featuring location-based
+            pricing, smart course approval workflows, a fully customizable Filament admin dashboard, and a
+            Flutter-integrated Laravel backend.
+          </p>
+          <div class="project-card__stack">
+            <code>Laravel</code><code>FilamentPHP</code><code>Flutter Web</code><code>Firebase</code><code>MySQL</code>
+          </div>
+          <a href="https://coptichymnsschool.com" target="_blank" rel="noopener" class="project-card__link"
+             onclick="event.stopPropagation()">
+            View Live Site
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="7" y1="17" x2="17" y2="7" /><polyline points="7 7 17 7 17 17" />
+            </svg>
+          </a>
+        </article>
+
+        <!-- Project 2 — Wahb (in development) -->
+        <article class="project-card reveal delay-2" data-project="wahb">
+          <div class="project-card__header">
+            <span class="project-card__num">02</span>
+            <div class="project-card__tags">
+              <span>Laravel</span><span>FilamentPHP</span><span>GPS</span>
+            </div>
+          </div>
+          <h3 class="project-card__title">Wahb</h3>
+          <p class="project-card__type">Blood &amp; Organ Donation SOS Platform</p>
+          <p class="project-card__desc">
+            A real-time emergency platform connecting patients, donors, and hospitals. Built with GPS-based hospital
+            matching, SOS request systems, role-based admin dashboards, and a secure donation approval workflow —
+            supporting Arabic and English.
+          </p>
+          <div class="project-card__stack">
+            <code>Laravel</code><code>FilamentPHP</code><code>Firebase</code><code>MySQL</code>
+          </div>
+          <span class="project-card__link project-card__link--passive">In Development</span>
+        </article>
+
+        <!-- Project 3 — Twintip (Google Play link) -->
+        <article class="project-card reveal delay-3" data-project="twintip">
+          <div class="project-card__header">
+            <span class="project-card__num">03</span>
+            <div class="project-card__tags">
+              <span>Laravel</span><span>Sanctum</span><span>QR</span>
+            </div>
+          </div>
+          <h3 class="project-card__title">Twintip</h3>
+          <p class="project-card__type">Sports Training Booking Platform</p>
+          <p class="project-card__desc">
+            A scalable booking platform for coaches and athletes with OTP &amp; Google auth, subscription
+            management, QR check-in, group and private sessions, multi-channel notifications, and an advanced
+            scheduling engine with queue/caching optimization.
+          </p>
+          <div class="project-card__stack">
+            <code>Laravel</code><code>Firebase</code><code>Sanctum</code><code>MySQL</code><code>Twilio</code>
+          </div>
+          <a href="https://play.google.com/store/apps/details?id=com.twintip.club" target="_blank" rel="noopener"
+             class="project-card__link" onclick="event.stopPropagation()">
+            View on Google Play
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="7" y1="17" x2="17" y2="7" /><polyline points="7 7 17 7 17 17" />
+            </svg>
+          </a>
+        </article>
+
+        <!-- Project 4 — Season App (has screenshots!) -->
+<article class="project-card reveal delay-1" data-project="season">
+  <div class="project-card__header">
+    <span class="project-card__num">04</span>
+
+    <div class="project-card__tags">
+      <span>Laravel</span>
+      <span>Gemini AI</span>
+      <span>GPS</span>
+    </div>
+  </div>
+
+  <h3 class="project-card__title">Season App</h3>
+
+  <p class="project-card__type">
+    API-Based Travel Management System
+  </p>
+
+  <p class="project-card__desc">
+    Smart travel management platform featuring AI-powered bag analysis,
+    real-time GPS group tracking, SOS emergency alerts, smart reminders,
+    and a bilingual Arabic/English admin dashboard built with Laravel
+    and Filament.
+  </p>
+
+  <div class="project-card__stack">
+    <code>Laravel</code>
+    <code>FilamentPHP</code>
+    <code>Firebase</code>
+    <code>MySQL</code>
+    <code>Gemini AI</code>
+  </div>
+
+  <span class="project-card__link" style="color: var(--accent); cursor: pointer;">
+    View Screenshots &amp; Details →
+  </span>
+</article>
+<article class="project-card reveal delay-1" data-project="elgent_steps">
+  <div class="project-card__header">
+    <span class="project-card__num">04</span>
+
+    <div class="project-card__tags">
+      <span>Laravel</span>
+      <span>FilamentPHP</span>
+      <span>SendGrid</span>
+    </div>
+  </div>
+
+  <h3 class="project-card__title">Elgent Steps</h3>
+
+  <p class="project-card__type">
+    Men's Clothing E-Commerce & Delivery Management System
+  </p>
+
+  <p class="project-card__desc">
+    Full-featured e-commerce platform for men’s fashion with advanced
+    order management, customizable T-shirt printing, delivery tracking,
+    real-time order notifications, and a powerful FilamentPHP admin dashboard
+    for managing products, users, and delivery operations efficiently.
+  </p>
+
+  <div class="project-card__stack">
+    <code>Laravel</code>
+    <code>FilamentPHP</code>
+    <code>MySQL</code>
+    <code>SendGrid</code>
+    <code>REST APIs</code>
+  </div>
+
+  <span class="project-card__link" style="color: var(--accent); cursor: pointer;">
+    View Screenshots &amp; Details →
+  </span>
+</article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░ EXPERIENCE ░░░ -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <p class="section__label reveal">Career Journey</p>
+      <h2 class="section__title reveal delay-1">Professional <em>Experience</em></h2>
+
+      <div class="timeline">
+
+        <div class="timeline__item reveal delay-1">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3>Laravel Backend Developer</h3>
+                <p class="timeline__company">Softigital</p>
+              </div>
+              <span class="timeline__date">06/2025 — Present</span>
+            </div>
+            <ul class="timeline__bullets">
+              <li>Developing and maintaining Laravel web applications with RESTful APIs and FilamentPHP admin dashboards.</li>
+              <li>Building scalable backend systems, optimizing databases, and integrating third-party services and APIs.</li>
+              <li>Collaborating with frontend and mobile teams to deliver secure and production-ready business solutions.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal delay-2">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3>Freelance Backend Developer</h3>
+                <p class="timeline__company">Self-Employed</p>
+              </div>
+              <span class="timeline__date">2024 — Present</span>
+            </div>
+            <ul class="timeline__bullets">
+              <li>Delivered backend systems and admin dashboards for healthcare, e-learning, sports, and business platforms.</li>
+              <li>Designed scalable REST APIs integrated with Flutter applications, Firebase services, and external APIs.</li>
+              <li>Implemented payment integrations, workflow automation, and role-based management systems.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal delay-3">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3>Laravel Developer</h3>
+                <p class="timeline__company">Code Craft</p>
+              </div>
+              <span class="timeline__date">12/2024 — 02/2025</span>
+            </div>
+            <ul class="timeline__bullets">
+              <li>Developed and maintained Laravel applications with RESTful APIs, Blade templates, and real-time features.</li>
+              <li>Worked with Echo and Pusher integrations for real-time notifications and communication systems.</li>
+              <li>Improved application performance and collaborated on scalable backend architecture solutions.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░ SERVICES ░░░ -->
+  <section class="section services" id="services">
+    <div class="container">
+      <p class="section__label reveal">What I Offer</p>
+      <h2 class="section__title reveal delay-1">Professional <em>Services</em></h2>
+      <div class="services__grid">
+
+        <div class="service-card reveal delay-1">
+          <div class="service-card__num">01</div>
+          <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" />
+          </svg>
+          <h3>API Design &amp; Development</h3>
+          <p>Clean, well-documented RESTful APIs built for performance, security, and seamless integration with web and mobile frontends.</p>
+        </div>
+
+        <div class="service-card reveal delay-2">
+          <div class="service-card__num">02</div>
+          <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="3" y="3" width="7" height="7" /><rect x="14" y="3" width="7" height="7" />
+            <rect x="14" y="14" width="7" height="7" /><rect x="3" y="14" width="7" height="7" />
+          </svg>
+          <h3>Admin Dashboard Development</h3>
+          <p>Powerful, customized Filament admin panels with role-based access, complex data management, analytics, and workflow automation.</p>
+        </div>
+
+        <div class="service-card reveal delay-3">
+          <div class="service-card__num">03</div>
+          <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <ellipse cx="12" cy="5" rx="9" ry="3" />
+            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+          </svg>
+          <h3>Database Architecture</h3>
+          <p>Optimized MySQL schema design, query tuning, and Redis-based caching strategies for systems that scale with your user growth.</p>
+        </div>
+
+        <div class="service-card reveal delay-4">
+          <div class="service-card__num">04</div>
+          <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          </svg>
+          <h3>Third-Party Integrations</h3>
+          <p>Seamless integration of Firebase, Twilio, Google APIs, payment gateways, and AI services into your Laravel application ecosystem.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░ CONTACT ░░░ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-mini-header">
+        <span>Let's Connect</span>
+        <h3>Available for freelance work &amp; collaborations</h3>
+      </div>
+      <div class="contact-pills">
+        <a href="mailto:karen.kamal466@gmail.com" class="contact-pill">Email ↗</a>
+        <a href="https://github.com/karenkamal24" target="_blank" class="contact-pill">GitHub ↗</a>
+        <a href="https://linkedin.com/in/karenkamal46" target="_blank" class="contact-pill">LinkedIn ↗</a>
+        <a href="https://wa.me/201273860271" target="_blank" class="contact-pill">WhatsApp ↗</a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░ FOOTER ░░░ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a href="#hero" class="footer__logo">KK<span class="dot">.</span></a>
+        <p class="footer__copy">© 2026 Karen Kamal Wadea. All rights reserved.</p>
+        <a href="#hero" class="footer__back">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
