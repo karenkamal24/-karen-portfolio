@@ -390,23 +390,26 @@ body {
   opacity: 0.5;
 }
 
-/* ── HERO NAME ── */
 .hero__name {
   font-family: var(--font-display);
   font-size: clamp(3rem, 6vw, 5.5rem);
-  line-height: 0.95;
+  line-height: 1.1;
   letter-spacing: -0.03em;
   color: var(--text);
   margin-bottom: 1.5rem;
-  min-height: 1.9em;
+  min-height: 1.2em;
+
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 .hero__name em {
   font-style: italic;
   color: var(--accent);
-  display: block;
+  display: inline;
 }
-
 /* ── HERO SUB ── */
 .hero__sub {
   font-size: clamp(0.88rem, 1.3vw, 1rem);

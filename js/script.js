@@ -97,7 +97,7 @@ function setupTypewriter() {
   const nameEl = document.querySelector('.hero__name');
   if (!nameEl) return;
 
-  const lines = ['Karen', 'Kamal'];
+  const lines = ['Karen', ' Kamal']; // لاحظي المسافة قبل Kamal
   nameEl.innerHTML = '';
 
   const karenSpan = document.createElement('span');
@@ -105,32 +105,32 @@ function setupTypewriter() {
 
   const kamalSpan = document.createElement('em');
   kamalSpan.className = 'tw-line tw-italic';
-  kamalSpan.style.display = 'block';
+  // حذفنا display: block
 
   nameEl.appendChild(karenSpan);
   nameEl.appendChild(kamalSpan);
 
   const cursor = document.createElement('span');
-  cursor.className   = 'tw-cursor';
+  cursor.className = 'tw-cursor';
   cursor.textContent = '|';
   nameEl.appendChild(cursor);
 
   let charIndex = 0;
   let lineIndex = 0;
   const targets = [karenSpan, kamalSpan];
-  const delay   = 80;
+  const delay = 80;
 
   function type() {
     if (lineIndex >= lines.length) {
       setTimeout(() => {
-        cursor.style.animation  = 'none';
-        cursor.style.opacity    = '0';
+        cursor.style.animation = 'none';
+        cursor.style.opacity = '0';
         cursor.style.transition = 'opacity 0.5s';
       }, 1200);
       return;
     }
 
-    const currentLine   = lines[lineIndex];
+    const currentLine = lines[lineIndex];
     const currentTarget = targets[lineIndex];
 
     if (charIndex < currentLine.length) {
@@ -146,7 +146,6 @@ function setupTypewriter() {
 
   setTimeout(type, 500);
 }
-
 // ══════════════════════════════════════════════════════════
 // ── FLOATING PARTICLES ────────────────────────────────────
 // ══════════════════════════════════════════════════════════
